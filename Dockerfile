@@ -1,6 +1,6 @@
-ARG VERSION
-FROM jumpserver/lina:${VERSION} AS lina
-FROM jumpserver/luna:${VERSION} AS luna
+ARG VERSION=v1.0.0
+FROM swaprepo.apk-group.net/apkpam/strv1/module/pam_lina:${VERSION} AS lina
+FROM swaprepo.apk-group.net/apkpam/strv1/module/pam_luna:${VERSION} AS luna
 
 FROM nginx:1.24-bullseye
 ARG TARGETARCH
