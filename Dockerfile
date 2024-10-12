@@ -1,4 +1,4 @@
-ARG VERSION=v1.0.0
+ARG VERSION=v1.0.1
 FROM swaprepo.apk-group.net/apkpam/strv1/module/pam_lina:${VERSION} AS lina
 FROM swaprepo.apk-group.net/apkpam/strv1/module/pam_luna:${VERSION} AS luna
 
